@@ -1,0 +1,233 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /*Cores*/
+
+    --cor-01: #0F0F0F;
+    --cor-02: #F1F1F1;
+
+    /*Fontes*/
+    --fonte-principal: "Roboto", sans-serif;
+}
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #5b5b5b;
+    border-radius: 7px;
+}
+body{
+    background-color: var(--cor-01);
+    color: var(--cor-02);
+    font-family: var(--fonte-principal);
+    /*overflow-y: hidden;*/
+}
+header{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+}
+.logo-header{
+    display: flex;
+    align-items: center;
+}
+.logo-header i{
+    padding: 13px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.logo-header sup{
+    margin-top: 10px;
+    margin-left: 5px;
+    align-self: flex-start;
+}
+.search-bar-header{
+    display: flex;
+    align-items: center;
+    width: 43%;
+    gap: 15px;
+}
+.search-bar-header input{
+    border: none;
+    background: none;
+    outline: none;
+    color: var(--cor-02);
+    width: 100%;
+}
+
+.search-container-internal{
+    display: flex;
+    justify-content: space-between;
+    flex: 0 1 732px;
+    border: 1px solid var(--cor-02);
+    border-radius: 26px;
+    padding-left: 15px;
+}
+.search-container-internal i{
+    padding: 12px 30px;
+    border-left: 1px solid var(--cor-02);
+    cursor: pointer;
+}
+.fa-microphone{
+    font-size: 25px;
+    padding: 10px;
+    cursor: pointer;
+    width: 10%;
+    text-align: center;
+}
+.fa-microphone:hover{
+    border-radius: 180px;
+    background-color: #f1f1f117;
+}
+.fa-magnifying-glass:hover{
+    background-color: #f1f1f117;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.menu-header{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.menu-header i{
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.menu-header i:hover{
+    border-radius: 180px;
+    background-color: #f1f1f117;
+}
+.menu-header img{
+    width: 35px;
+    cursor: pointer;
+}
+.meu-main-principal{
+    display: flex;
+    flex-flow: row;
+    margin: 10px 10px;
+}
+.menu-left{
+    display: flex;
+    flex-flow: column;
+    width: 20%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.top{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-bottom: 1px solid #f1f1f159;
+    padding: 12px;
+    font-size: 16px;
+}
+.top p{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    width: 100%;
+    padding: 12px;
+}
+.top p:hover{
+    background-color: #f1f1f123;
+    border-radius: 20px;
+}
+.top p img{
+    width: 35px;
+    margin-right: 20px;
+}
+.top i{
+    font-size: 16px;
+    margin-right: 30px;
+}
+.top h1{
+    font-size: 19px;
+    margin: 10px 0px;
+}
+.you{
+    display: flex;
+    align-items: center;
+}
+.you i{
+    margin-left: 20px;
+    font-size: 14px;
+}
+.menu-right{
+    display: flex;
+    flex-flow: column;
+    width: 80%;
+    margin-left: 40px;
+}
+.top-menu-right{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 30px;
+    overflow-x: scroll;
+}
+.top-menu-right::-webkit-scrollbar{
+    height: 8px;
+}
+.top-menu-right p{
+    flex: 0 0 auto;
+    margin-right: 10px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+.top-menu-right p:hover{
+    background-color: #f1f1f117;
+    border-radius: 10px;
+}
+.container-videos{
+    display: flex;
+    flex-flow: row wrap;
+    cursor: pointer;
+    gap: 10px;
+}
+.videos-container{
+    width: 300px;
+}
+.videos-container img{
+    width: 290px;
+    border-radius: 20px;
+}
+.image-chanel img{
+    width: 35px;
+}
+.video-details{
+    width: 100%;
+}
+.video-details{
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    margin-top: 10px;
+    gap: 10px;
+}
+.video-title h2{
+    font-size: 16px;
+    padding: 10px 0px;
+}
+.text-tile{
+    padding-bottom: 20px;
+}
+.text-tile p{
+    font-size: 14px;
+}
